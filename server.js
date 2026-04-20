@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.post("/api/generateName", (req, res) => {
-  const names = ["Pista", "Béla"];
+  const names = ["Pista", "Béla", "Gizi", "Pál"];
   const selectedName = names[Math.floor(Math.random() * names.length)];
   try {
     const { cardNumber, cardHolderName, cardExpiryDate, cardCvc } = req.body;
